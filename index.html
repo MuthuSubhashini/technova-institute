@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechNova Institute</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+<!-- ================= ENROLL MODAL (MOVED INSIDE BODY) ================= -->
+<div id="enrollModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeEnrollForm()">&times;</span>
+
+    <h2>Enroll Now</h2>
+
+    <form id="enrollForm">
+  <input type="hidden" id="courseName" name="courseName" />
+
+  <label>Name</label>
+  <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+  <label>Email</label>
+  <input type="email" id="email" name="email" required placeholder="Your Email" />
+
+  <label>Phone</label>
+  <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number" />
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>
+</div>
+<!-- ================================================================ -->
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="brand">
+      <img src="images/logo.png" alt="TechNova Logo">
+      <div class="brand-text">
+        <div class="name">TechNova</div>
+        <div class="tag">Institute</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero reveal">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <h1>
+        Build <span>Industry-Ready Skills</span><br>
+        With TechNova
+      </h1>
+
+      <p>
+        Learn from industry experts. Build real-world projects.
+        Become job-ready with placement support.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="courses.html" class="btn primary">Explore Courses</a>
+        <a href="free-counselling.html" class="btn outline">Free Counselling</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="glass-card floating">
+        <h3>🚀 2500+ Students</h3>
+        <p>Successfully trained</p>
+      </div>
+
+      <div class="glass-card floating delay">
+        <h3>💼 Placement Support</h3>
+        <p>Career guidance included</p>
+      </div>
+
+      <div class="glass-card floating delay">
+        <h3>🏆 Industry Projects</h3>
+        <p>Hands-on experience</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="stats reveal">
+  <div class="container stats-grid">
+    <div class="stat-card">
+      <h2>2500+</h2>
+      <p>Students Trained</p>
+    </div>
+    <div class="stat-card">
+      <h2>15+</h2>
+      <p>Professional Courses</p>
+    </div>
+    <div class="stat-card">
+      <h2>95%</h2>
+      <p>Placement Success</p>
+    </div>
+  </div>
+</section>
+
+<section class="courses reveal">
+  <div class="container">
+    <h2 class="section-title">Our Popular Courses</h2>
+
+    <div class="course-grid">
+<div class="course-card">
+  <h3>Web Development</h3>
+  <p>HTML, CSS, JavaScript, React, Node.js</p>
+  <span>Duration: 6 Months</span>
+  <div class="course-price">₹35,000</div>
+  <a href="courses/web-development.html">View Course</a>
+  <button class="enroll-btn"
+    onclick="openEnrollForm('Web Development - ₹35,000')">
+    Enroll Now
+  </button>
+</div>
+
+<div class="course-card">
+  <h3>UI / UX Design</h3>
+  <p>Figma, UX Research, Prototyping</p>
+  <span>Duration: 4 Months</span>
+  <div class="course-price">₹28,000</div>
+  <a href="courses/ui-ux.html">View Course</a>
+  <button class="enroll-btn"
+    onclick="openEnrollForm('UI / UX Design - ₹28,000')">
+    Enroll Now
+  </button>
+</div>
+
+<div class="course-card">
+  <h3>AI & Data Science</h3>
+  <p>Python, Machine Learning, AI Basics</p>
+  <span>Duration: 6 Months</span>
+  <div class="course-price">₹45,000</div>
+  <a href="courses/ai-data-science.html">View Course</a>
+  <button class="enroll-btn"
+    onclick="openEnrollForm('AI & Data Science - ₹45,000')">
+    Enroll Now
+  </button>
+</div>
+
+<div class="course-card">
+  <h3>Digital Marketing</h3>
+  <p>SEO, Social Media, Google Ads</p>
+  <span>Duration: 3 Months</span>
+  <div class="course-price">₹22,000</div>
+  <a href="courses/digital-marketing.html">View Course</a>
+  <button class="enroll-btn"
+    onclick="openEnrollForm('Digital Marketing - ₹22,000')">
+    Enroll Now
+  </button>
+</div>
+
+<div class="course-card">
+  <h3>Python Programming</h3>
+  <p>Core Python, OOP, Automation</p>
+  <span>Duration: 4 Months</span>
+  <div class="course-price">₹25,000</div>
+  <a href="courses/python-programming.html">View Course</a>
+  <button class="enroll-btn"
+    onclick="openEnrollForm('Python Programming - ₹25,000')">
+    Enroll Now
+  </button>
+</div>
+
+<div class="course-card">
+  <h3>Cloud Computing</h3>
+  <p>AWS, Azure, Cloud Fundamentals</p>
+  <span>Duration: 5 Months</span>
+  <div class="course-price">₹38,000</div>
+  <a href="courses/cloud-computing.html">View Course</a>
+  <button class="enroll-btn"
+    onclick="openEnrollForm('Cloud Computing - ₹38,000')">
+    Enroll Now
+  </button>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="about-preview reveal">
+  <div class="container about-grid">
+    <div>
+      <h2>Why Choose TechNova?</h2>
+      <p>
+        TechNova Institute is built to transform students
+        into industry-ready professionals through structured
+        learning, mentorship, and real-time projects.
+      </p>
+      <a href="about.html" class="btn primary">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta reveal">
+  <div class="container cta-box">
+    <h2>Start Your Career Journey Today</h2>
+    <p>Enroll now and get free career counselling</p>
+    <a href="contact.html" class="btn primary" onclick="window.location='contact.html'">Contact Us</a>
+    <script src="js/contact.js"></script>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 TechNova Institute</p>
+    <p>Email: info@technova.in | Phone: +91 98765 43210</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<!-- ================= ENROLL + REVEAL SCRIPT ================= -->
+<script>
+function openEnrollForm(course) {
+  document.getElementById("courseName").value = course;
+  document.getElementById("enrollModal").style.display = "block";
+}
+
+function closeEnrollForm() {
+  document.getElementById("enrollModal").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Reveal animation
+  document.querySelectorAll(".reveal")
+    .forEach(el => el.classList.add("active"));
+
+  // Enroll form submit
+  const enrollForm = document.getElementById("enrollForm");
+  if (enrollForm) {
+    enrollForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Enrollment submitted successfully!");
+      closeEnrollForm();
+    });
+  }
+
+});
+</script>
+<script>
+function openEnrollForm(course) {
+  document.getElementById("courseName").value = course;
+  document.getElementById("enrollModal").style.display = "flex";
+}
+
+function closeEnrollForm() {
+  document.getElementById("enrollModal").style.display = "none";
+}
+
+/* ===== CLOSE WHEN CLICKING OUTSIDE ===== */
+window.addEventListener("click", function (e) {
+  const modal = document.getElementById("enrollModal");
+  if (e.target === modal) {
+    closeEnrollForm();
+  }
+});
+
+/* ===== CLOSE ON ESC KEY ===== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  document.querySelectorAll(".reveal")
+    .forEach(el => el.classList.add("active"));
+
+  const enrollForm = document.getElementById("enrollForm");
+
+  enrollForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      courseName: document.getElementById("courseName").value
+    };
+
+    try {
+      const res = await fetch("http://localhost:5000/api/enroll", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        alert("Enrollment submitted successfully!");
+        enrollForm.reset();
+        closeEnrollForm();
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+
+    } catch (err) {
+      alert("Server not responding!");
+      console.error(err);
+    }
+  });
+
+});
+
+
+</script>
+
+<!-- ========================================================== -->
+
+</body>
+</html>

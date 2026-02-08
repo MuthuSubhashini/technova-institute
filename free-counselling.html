@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Counselling | TechNova Institute</title>
+    <link rel="stylesheet" href="css/free-counselling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- ANIMATED BACKGROUND -->
+<div class="bg">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- NAVBAR -->
+<header class="site-header">
+  <div class="header-inner">
+
+    <!-- BRAND -->
+    <div class="brand">
+      <img src="images/logo.png" alt="TechNova Logo">
+
+      <div class="brand-text">
+        <div class="name">TechNova</div>
+        <div class="tag">Institute</div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- COUNSELLING SECTION -->
+<section class="counselling">
+    <div class="info">
+        <h2>Free Career Counselling</h2>
+        <p>
+            Confused about your career path?  
+            Our experts will guide you with personalized counselling,
+            industry insights, and skill roadmaps — **100% FREE**.
+        </p>
+
+        <ul>
+            <li>🎯 Career clarity & guidance</li>
+            <li>🚀 Course & skill roadmap</li>
+            <li>💼 Placement preparation tips</li>
+            <li>📈 Industry trends & opportunities</li>
+        </ul>
+    </div>
+
+    <div class="form-box glass">
+        <h3>Book Your Free Session</h3>
+
+        <form action="/api/counselling" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="tel" name="mobile" placeholder="Mobile Number" required>
+
+<select name="course" required>
+    <option value="">Select Interested Course</option>
+    <option>Web Development</option>
+    <option>AI & Data Science</option>
+    <option>UI / UX Design</option>
+    <option>Digital Marketing</option>
+</select>
+
+<textarea name="goals" placeholder="Your Career Goals (Optional)"></textarea>
+
+<button type="submit">Book Free Counselling</button>
+
+</form>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 TechNova Institute</p>
+    <p>Email: info@technova.in | Phone: +91 98765 43210</p>
+  </div>
+</footer>
+<script src="models/Counselling.js"></script>
+
+</body>
+</html>

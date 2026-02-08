@@ -1,0 +1,53 @@
+/* ===== CLOUD COMPUTING THEME ===== */
+
+.course-hero {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.course-video {
+  background: #f0f9ff;
+  padding: 60px 20px;
+}
+
+.details-card h3 {
+  color: #0284c7;
+}
+
+.course-cta {
+  background: linear-gradient(135deg, #0284c7, #075985);
+  color: #ffffff;
+  padding: 70px 20px;
+}
+
+.course-cta .btn {
+  background: #ffffff;
+  color: #075985;
+}
+
+.video_type {
+  padding: 40px 20px;
+}
+
+.video_heading {
+  font-size: 28px;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #075985;
+}
+
+.video_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video_wrapper video {
+  width: 720px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  background: #000;
+}
